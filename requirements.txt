@@ -1,1 +1,6 @@
 streamlit
+googlesearch-python
+streamlit
+requests
+Anthropic
+dotenv
