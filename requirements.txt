@@ -3,4 +3,4 @@ googlesearch-python
 streamlit
 requests
 Anthropic
-dotenv
+python-dotenv
