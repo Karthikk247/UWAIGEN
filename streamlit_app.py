@@ -66,7 +66,7 @@ Your task is to conduct a thorough analysis following these steps:
    c. Classify the industry and determine the appropriate NAICS codes.
    d. Extract a concise company description from the website or search results.
 
-3. Compile your findings and present them in a structured format that will assist in underwriting decisions.
+3. Compile your findings and present them in a structured format that will assist in underwriting decisions. also present online presence score out of 100
 
 <underwriting_analysis>
 [Analysis will go here]
@@ -98,8 +98,6 @@ def extract_content(text_block):
         raw_text = text_block.text
         return raw_text
 
-# Replace placeholders like {{COMPANY_NAME}} with real values,
-# because the SDK does not support variables.
 
 
 # Initialize session state for storing business data
