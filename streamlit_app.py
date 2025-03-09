@@ -48,7 +48,9 @@ def NAICS_DESC(client, model, business_data):
                     "content": [
                         {
                             "type": "text",
-                            "text": f"""You are an expert underwriter tasked with analyzing a business based on its name and location. Your goal is to gather and interpret information that will help assess the business's risk profile. Here's the company information you need to analyze:
+                            "text": f"""You are an expert underwriter tasked with analyzing a business based on its name and location.
+                            Your goal is to gather and interpret information that will help assess the business's risk profile. 
+                            Here's the company information you need to analyze:
 
 Company Name: {business_data['business_name']}
 Company Location: {business_data['location']}
@@ -118,7 +120,7 @@ if "urls" not in st.session_state:
 def search_business(business_name, location):
     try:
         query = f"{business_name} {location} business"
-        search_results = list(search(query, num_results=5))
+        search_results = list(search(query, num_results=8))
         return search_results
     except Exception as e:
         return [f"An error occurred: {str(e)}"]
